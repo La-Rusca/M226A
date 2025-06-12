@@ -1,0 +1,10 @@
+Liste di dati:
+Generate dall'intelligenza artificiale
+
+String Format + StringBuilder:
+Per comprendere l'utilizzo di String Format assieme al metodo append dello StringBuilder, ho utilizzato il seguente sito:
+https://coderanch.com/t/746470/java/Formatter-StringBuilder.
+
+Per apprendere meglio String format invece:
+https://www.geeksforgeeks.org/java-string-format-method-with-examples/   
+https://www.baeldung.com/string-format

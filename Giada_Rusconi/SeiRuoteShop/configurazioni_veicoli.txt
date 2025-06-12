@@ -1,0 +1,10 @@
+CONFIGURAZIONE_NUMERO:1
+--- CONFIGURAZIONE AUTO ---
+Auto: Fiat 500 - €25000.00
+Colore: Bianco - €0.00
+Motore: 1.0 EcoBoost (Benzina) - 125 CV, 170 Nm - €2000.00
+Accessori:
+  - Navigatore GPS: €800.00
+
+PREZZO TOTALE: €27800.00
+---

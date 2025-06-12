@@ -1,0 +1,98 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Auto {
+-id: int
+-prezzoBase: double
+-marca: String
+-modello: String
+-idUsati: int
+-random: boolean
++Auto(nome : String, prezzoBase : double, marca : String, modello : String, idUsati : int, random : boolean)
++getNome():string
++getPrezzoBase():double
++getMarca(): String
++getModello(): String
++toString(): String
+}
+
+class Moto {
+-id: int
+-prezzoBase: double
+-marca: String
+-modello: String
++Moto(nome: String, prezzoBase: double, marca : String, modello : String)
++getNome(): String
++getPrezzoBase(): double
++getMarca(): String
++getModello(): String
++toString(): String
+}
+
+class Colore {
+-colore: String
+-costoAggiuntivo: double
+-glitter: boolean
++Colore(colore : String, costoAggiuntivo : double, glitter : boolean)
++getColore(): String
++getCostoAggiuntivo(): double
++getGlitter(): boolean
++toString(): String
+}
+
+class Motore {
+-nome: String
+-tipo: String
+-costo: double
+-potenza: double
+-coppia: double
++Motore(nome : String, tipo : String, costo : double, potenza : double, coppia : double)
++getNome(): String
++getCosto(): double
++getPotenza(): double
++getCoppia(): double
++toString(): String
+}
+
+class Accessorio {
+-nome: String
+-costo: double
++Accessorio(nome : String, costo : double)
++getNome():string
++getCosto():double
++toString(): String
+}
+
+class ConfigurazioneAuto {
+-auto: Auto
+-colore: Colore
+-motore: Motore
+-accessori: ArrayList<Accessorio>
++ConfigurazioneAuto(auto : Auto, colore : Colore, motore : Motore)
++calcolaPrezzoTotale(): double
+}
+
+class ConfigurazioneMoto {
+-moto: Moto
+-colore: Colore
+-motore: Motore
+-accessori: ArrayList<Accessorio>
++ConfigurazioneMoto(moto : Moto, colore : Colore, motore : Motore)
++calcolaPrezzoTotale(): double
+}
+
+ConfigurazioneAuto "1" -- "1" Auto
+ConfigurazioneAuto "1" -- "1" Colore
+ConfigurazioneAuto "1" -- "1" Motore
+ConfigurazioneAuto "1" -- "N" Accessorio
+
+ConfigurazioneMoto "1" -- "1" Moto
+ConfigurazioneMoto "1" -- "1" Colore
+ConfigurazioneMoto "1" -- "1" Motore
+ConfigurazioneMoto "1" -- "N" Accessorio
+
+
+
+@enduml
+
+
